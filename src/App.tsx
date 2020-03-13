@@ -16,18 +16,18 @@ export default () => {
         <Link href="http://10.68.106.111:9090/">
           SIPC - Sistema integrado de prestação de econtas
         </Link>
-        <Link href="http://10.68.106.111:8020/">
+        <Link href="http://10.68.106.111:8080/">
           SISBAPI - Amigo da Pessoa Idosa
         </Link>
-        <Link href="http://10.68.106.111:8010/">
+        <Link href="http://10.68.106.111:8014/">
           SLI - Lei de Incentivo ao Esporte [SPRINT-14]
         </Link>
-        {/* <Link href="http://10.68.106.111:9090/">
+        <Link href="http://10.68.106.111:8015/">
           SLI - Lei de Incentivo ao Esporte [SPRINT-15]
-        </Link> */}
-        <Link href="http://10.68.106.111:9090/">
-          SLI - Lei de Incentivo ao Esporte
         </Link>
+        {/* <Link href="http://10.68.106.111:9090/">
+          SLI - Lei de Incentivo ao Esporte
+        </Link> */}
         <Link href="http://10.68.106.111:9085/">Pátria Voluntária</Link>
       </header>
     </div>
