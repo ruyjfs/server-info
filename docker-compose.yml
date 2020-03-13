@@ -1,0 +1,21 @@
+version: "3.5"
+services:
+  server-info-build-service:
+    container_name: server-info-build
+    image: node:13-alpine
+    working_dir: /var/www
+    volumes:
+      - .:/var/www/
+    command: sh -c 'yarn && yarn build'
+    tty: false
+    restart: on-failure
+  server-info-service:
+    container_name: server-info
+    image: nginx:1.17-alpine
+    working_dir: /var/www
+    volumes:
+      - ./build:/usr/share/nginx/html
+    ports:
+      - "3000:80"
+    tty: true
+    restart: on-failure
