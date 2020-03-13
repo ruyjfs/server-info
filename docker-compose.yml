@@ -16,6 +16,6 @@ services:
     volumes:
       - ./build:/usr/share/nginx/html
     ports:
-      - "3000:80"
+      - "80:80"
     tty: true
     restart: on-failure
