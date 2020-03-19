@@ -3,32 +3,21 @@ import styled from 'styled-components';
 
 import logo from './logo.svg';
 import './App.css';
+import dataj3 from './data/j3.json';
+import dataTatu from './data/tatu.json';
 
 export default () => {
+  // console.log(process.env.NODE_ENV, process.env.APP_NAME);
+  const data = false ? dataTatu : dataj3;
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>TATU</p>
-        <Link href="http://10.68.106.111:9067/projects?sort=-analysis_date">
-          Sonar 6.7
-        </Link>
-        <Link href="http://10.68.106.111:9090/">
-          SIPC - Sistema integrado de prestação de econtas
-        </Link>
-        <Link href="http://10.68.106.111:8080/">
-          SISBAPI - Amigo da Pessoa Idosa
-        </Link>
-        <Link href="http://10.68.106.111:8014/">
-          SLI - Lei de Incentivo ao Esporte [SPRINT-14]
-        </Link>
-        <Link href="http://10.68.106.111:8015/">
-          SLI - Lei de Incentivo ao Esporte [SPRINT-15]
-        </Link>
-        {/* <Link href="http://10.68.106.111:9090/">
-          SLI - Lei de Incentivo ao Esporte
-        </Link> */}
-        <Link href="http://10.68.106.111:9085/">Pátria Voluntária</Link>
+        <p>{data.name}</p>
+        {data.list.map((item: any) => (
+          <Link href={item.url}>{item.name}</Link>
+        ))}
       </header>
     </div>
   );

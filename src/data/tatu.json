@@ -1,0 +1,29 @@
+{
+  "name": "TATU",
+  "list": [
+    {
+      "name": "Sonar 6.7",
+      "url": "http://10.68.106.111:9067/projects?sort=-analysis_date"
+    },
+    {
+      "name": "SIPC - Sistema integrado de prestação de econtas",
+      "url": "http://10.68.106.111:9090/"
+    },
+    {
+      "name": "SISBAPI - Amigo da Pessoa Idosa",
+      "url": "http://10.68.106.111:8080/"
+    },
+    {
+      "name": "SLI - Lei de Incentivo ao Esporte [SPRINT-14]",
+      "url": "http://10.68.106.111:8014/"
+    },
+    {
+      "name": "SLI - Lei de Incentivo ao Esporte [SPRINT-15]",
+      "url": "http://10.68.106.111:8015/"
+    },
+    {
+      "name": "http://10.68.106.111:9085/",
+      "url": "Pátria Voluntária"
+    }
+  ]
+}
